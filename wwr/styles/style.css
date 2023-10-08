@@ -1,11 +1,11 @@
 /* color palette */
 :root {
 --light-neutral-color: #d8d0c3;
---medium-color: #637844;
+--medium-color: #6281a4;
 --dark-color: #444e39;
---very-dark-color: #3a3017;
---loud-accent-color: #d16200;
---light-accent-color: #e9ab7e;
+--very-dark-color: #241d1d;
+--dark-accent-color: #8C271E;
+--light-accent-color: #9dbadc;
 }
 
 /* section properties*/
@@ -37,7 +37,7 @@ header {
 }
 main section {
     text-align: center;
-    color: var(--very-dark-color);
+    color: var(--dark-accent-color);
 }
 nav a {
     text-align: center;
@@ -63,13 +63,14 @@ nav a:hover{
     text-align: center;
 }
 .home-title {
-    color: var(--loud-accent-color);
+    color: var(--dark-accent-color);
 }
 .icon{
     width: 80px;
 }
 .logo{
     width: 80px;
+    background-color: var(--light-neutral-color);
 }
 .msg{
     background-color: var(--medium-color);
