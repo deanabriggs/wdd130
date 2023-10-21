@@ -5,10 +5,10 @@ Fonts are separated by a & */
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Rock+Salt&display=swap');
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #d8d0c3; /* background & instead of white sometimes */
-  --secondary-color: #444e39;
-  --accent1-color: #8C271E;
-  --accent2-color: #6281a4;
+  --primary-color: #444e39;
+  --secondary-color: #d8d0c3; /* background & instead of white sometimes */
+  --accent1-color: #6281a4;
+  --accent2-color: #8C271E;
   --accent3-color: #9dbadc;
   --alt-black-text: #241d1d; /* instead of black */
 
