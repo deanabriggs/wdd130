@@ -96,10 +96,11 @@ nav a:hover {
 }
 .hero_msg {
     display: grid;
-    grid-column: 2/3;
+    grid-column: 1/4;
     grid-row: 1/2;
     z-index: 1;
     font-size: 4em;
+    margin-top: -10px;
 }
 
 .content {
@@ -136,6 +137,7 @@ nav a:hover {
 #me {
     display: grid;
     grid-column: 1/2;
+    place-self: center;
     border: 5px solid black;
     border-radius: 50%;
     width: 100%;
