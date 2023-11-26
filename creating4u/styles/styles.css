@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Kaushan+Script');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #000066   ;
+  --secondary-color: #c1d1eb ;
+  --accent1-color: #ec5b69;
+  --accent2-color: #6600cc;
+  --alt-white-color: #f0f4fa;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Kaushan Script";
+  --paragraph-font: Handlee, Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #6600cc;  /* headlines on a white background */ 
+  --headline-color-on-color: #ec5b69; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #000066; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #c1d1eb; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #000066;
+  --nav-link-color: #ec5b69;
+  --nav-background-color: #000066;
+  --nav-hover-link-color: #6600cc;
+  --nav-hover-background-color: #c1d1eb;
+}
+
+body {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: var(--paragraph-font);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+header {
+    display: grid;
+    grid-template-columns: 15% auto;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    z-index: -1;
+    text-align: left;
+    background-color: var(--nav-background-color);
+}
+#logo_link {
+    display: grid;
+    grid-column: 1/2;
+    margin: 5%;
+    padding-left: 15%;
+    justify-content: left;
+}
+.logo {
+    width: 100%;
+    border-radius: 50%;
+}
+nav {
+    display: inline;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 5%;
+    width: 100%;
+    text-align: right;
+    font-size: 1.2em;
+}
+nav a {
+    display: inline;
+    text-decoration: none;
+    padding: 3%;
+    margin-left: auto;
+}
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    z-index: -1;
+    justify-items: center;
+}
+#hero_pic {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    z-index: 0;
+    box-sizing: border-box;
+    width: 100%;
+    border: 4px solid black;
+}
+.hero_msg {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    z-index: 1;
+    font-size: 4em;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 100px 60px;
+}
+
+.para {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0px 30px;
+}
+.para h4 {
+    display: inline-block;
+    padding: 20px;
+    margin: 0px;
+}
+.para p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 0px;
+}
+
+#aboutme {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 75%;
+    margin: 0 auto;
+    padding: 50px;;
+    justify-items: center;
+}
+
+#me {
+    display: grid;
+    grid-column: 1/2;
+    border: 5px solid black;
+    border-radius: 50%;
+    width: 100%;
+}
+
+#aboutme p {
+    display: grid;
+    grid-column: 2/3;
+    text-align: left;
+    place-self: center;
+    padding-left: 80px;
+    font-size: 1.2em;
+
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px;
+    margin-top: 125px;
+    background-color: var(--nav-background-color);
+    color: var(--secondary-color);
+}
+
+footer p:nth-of-type(1) {
+    text-align: left;
+}
+footer p a {
+    text-decoration: none;
+    color: var(--nav-link-color);
+}
+footer p a:hover {
+    text-decoration: none;
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+footer p:nth-of-type(3) {
+    text-align: right;
+}
