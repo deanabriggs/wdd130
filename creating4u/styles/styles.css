@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 header {
     display: grid;
-    grid-template-columns: 15% auto;
+    grid-template-columns: 1fr 6fr;
     justify-items: center;
     align-items: center;
     margin: 0 auto;
@@ -99,14 +99,14 @@ nav a:hover {
     grid-column: 1/4;
     grid-row: 1/2;
     z-index: 1;
-    font-size: 4em;
-    margin-top: -10px;
+    font-size: 4em auto;
+    margin-top: 0px;
 }
 
 .content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 100px 60px;
+    padding: .5em .25em;
 }
 
 .para {
@@ -176,4 +176,79 @@ footer p a:hover {
 }
 footer p:nth-of-type(3) {
     text-align: right;
+}
+
+/* for CONTACTUS page */
+
+form {
+    margin: 0 auto;
+    width: 420px;
+    padding: 1em;
+    border: 3px solid var(--nav-background-color);
+    border-radius: 1em;
+    margin-top: 100px;
+}
+
+form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li + li {
+    margin-top: 1em;
+}
+
+form label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+input, textarea, #topics {
+    font: 1em sans-serif;
+    width: 310px;
+    box-sizing: border-box;
+    border: 2px solid var(--accent2-color);
+} 
+
+#name:focus, #mail:focus, #topics:focus, #msg:focus {
+    border-color: var(--accent2-color);
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+
+#contactus-main .button {
+    padding-left: 85px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    font-size: larger;
+}
+#contactus-main button {
+    margin-left: 1.1em;
+    background-color: var(--nav-link-color);
+    border: 3px solid var(--paragraph-background-color);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#feedback {
+    background-color: var(--alt-white-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
 }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <div id="contactus-content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo1.jpg" alt="Creating4U Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="process.html">The Process</a>
+                <a href="ideas.html">Design Ideas</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+
+        <main id="contactus-main">
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" >
+                    </li>
+                    <li>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="user_email" >
+                    </li>
+                    <li>
+                        <label for="subject">Subject:</label>
+                        <select id="topics" name="topics">
+                          <option value="select">-- select your subject --</option>
+                          <option value="new">New Webpage</option>
+                          <option value="changes">Changes & Additions</option>
+                          <option value="schedule">Schedule an Appointment</option>
+                          <option value="questions">Questions or Comments</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send your message</button>
+                    </li>
+                </ul>
+            </form>
+        </main>
+
+
+        <footer>
+            <p>Copyright &copy; Creating 4U | 2023</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p>(916) ###-#### | proj...@creating4u.com</p>
+        </footer>
+    </div>    
+
+</body>
+</html>
