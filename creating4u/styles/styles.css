@@ -278,18 +278,18 @@ textarea {
 .hero_icons {
     display: grid;
     grid-row: 2/3;
-    min-height: 374px;
-    min-width: 374px;
-    grid-template-columns: auto 80px 20px 80px 80px 80px 20px 80px auto;
-    grid-template-rows: auto 50px 75px 25px 25px 25px 75px 50px auto;
+    padding: 5% 10% 10% 10%;
+    grid-template-columns: auto 18% 4% 18% 18% 18% 4% 18% auto;
+    grid-template-rows: auto 15% 22% 7% 7% 7% 22% 15% auto;
 }
 .hero_idea .icon {
     border: 3px solid var(--accent1-color);
     display: grid;
     align-self: center;
     background-color: var(--alt-white-color);
-    min-width: 70px;
-    padding: 20px;
+    max-width: 100%;
+    min-width: 50%;
+    padding: 5px;
     margin-left: 0;
 }
 .hero_idea .icon:nth-child(1) {
@@ -315,7 +315,7 @@ textarea {
     display: grid;
     grid-row: 2/3;
     min-height: 374px;
-    min-width: 374px;
+    min-width: 100%;
     grid-template-columns: auto 33px 55px 33px 11px 11px 77px 11px 11px 44px 33px 11px 44px auto;
     grid-template-rows: auto 60px 20px 60px 10px 20px 60px 10px 10px 20px 20px 30px 30px 20px auto;
     list-style: none;
@@ -369,6 +369,7 @@ textarea {
 }
 .hero_proc h1, .hero_idea h1 {
     border-bottom: 1px solid var(--nav-background-color);
+    box-sizing: border-box;
 }
 .hero_proc_msg, .hero_idea_msg {
     grid-row: 2/3;
@@ -448,8 +449,8 @@ textarea {
     display: grid;
     grid-template-columns: 100%;
 }
-.icon{
-    width: 90px;
+.topic .icon{
+    width: 2em;
     grid-row: 1/2;
     grid-column: 1/2;
 }
@@ -605,52 +606,70 @@ textarea {
 
     /* The Process Page Adjustments */
     .hero_proc, .hero_idea {
+        box-sizing: border-box;
+        width: 100%;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
+        margin: 0px;
+        padding: 0%;
     }
     .hero_proc h1, .hero_idea h1 {
+        display: block;
+        width: 100%;
         grid-column: 1/2;
         grid-row: 1/2;
-        padding: 10px;
     }
     .hero_proc_list {
+        display: block;
+        width: 100%;
         grid-column: 1/2;
         grid-row: 2/3;
-        margin-top: 60px;
+        margin-top: 0px;
+        align-self: center;
+        justify-self: center;
+        padding: 20%;
     }
     .hero_proc_msg, .hero_idea_msg {
         display: block;
-        grid-row: 3/4;
+        width: 100%;
         grid-column: 1/2;
+        grid-row: 3/4;
+        margin-top: 0px;
         margin: 0 auto;
-        margin-top: 80px;
-        padding: 10px;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        padding: 5%;
     }
 
     .topic {
+        box-sizing: border-box;
         display: grid;
-        grid-template-columns: 1fr 15fr;
-        width: 100%;
-        margin: 0 auto;
-        margin-top: 80px;
-        padding: 5px;
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin-top: 40px;
+        margin-left: 0;
+        padding: 0px;
+        font-size: 60%;
     }
-
     .proc_item, .idea_item {
-        padding: 15%;
+        grid-column: 1/2;
+        padding: 3%;
+        margin: 5px;
     }
     .proc_details, .proc_details_icon, .idea_details {
+        width: 100%;
         display: grid;
-        grid-column: 2/3;
+        grid-column: 1/2;
         margin-left: 10%;
-        border: 4px solid var(--accent1-color);
+        border: 3px solid var(--accent1-color);
         text-align: left;
-        padding: 10px;
         background-color: var(--alt-white-color);
     }
     .proc_details h4, .proc_details_icon h4, .idea_details h4 {
         margin-top: 5px;
         margin-bottom: 7px;
+        padding: 3%;
     }
     .proc_details p, .proc_details ul, .proc_details_icon p, .proc_details_icon ul, .idea_details p, .idea_details ul {
         margin-top: 0px;
@@ -668,7 +687,7 @@ textarea {
         grid-template-columns: 100%;
     }
     .proc_details_icon h4 {
-        margin-left: 60px;
+        margin-left: 40px;
         grid-row: 1/2;
         grid-column: 1/2;
     }
@@ -678,4 +697,54 @@ textarea {
     .idea_img img {
         border: 2px solid;
     }
+    .hero_proc_list {
+        box-sizing: border-box;
+        display: grid;
+        grid-row: 2/3;
+        min-height: 10%;
+        min-width: 10%;
+        grid-template-columns: .5% 8.7% 14.6% 8.7% 2.9% 2.9% 20.4% 2.9% 2.9% 11.6% 8.7% 2.9% 11.6% .5%;
+        grid-template-rows: auto 6fr 2fr 6fr 1fr 2fr 6fr 1fr 1fr 2fr 2fr 3fr 3fr 2fr auto;
+        list-style: none;
+        padding: 10px;
+    }
+    .hero_proc_list li {
+        box-sizing: border-box;
+        border: 1px solid var(--accent1-color);
+        border-radius: 50%;
+        display: grid;
+        align-self: center;
+        background-color: var(--alt-white-color);
+        font-size: 50%;
+    }
+    .hero_proc h1, .hero_idea h1 {
+        display: grid;
+        grid-row: 1/2;
+        grid-column: 1/2;
+        background-color: var(--alt-white-color);
+        margin-top: 0;
+        padding: 20px;
+    }
+    .hero_proc_msg, .hero_idea_msg {
+        grid-row: 3/3;
+        grid-column: 1/2;
+        max-width: 374px;
+        min-width: 100px;
+        padding: 0px;
+        font-weight: bold;
+        margin: 0;
+    }
+    .start {
+        border: 2px solid var(--accent2-color);
+        padding: 5px;
+        font-size: 60%;
+    }
+    .hero_proc_msg p, .hero_idea_msg p {
+        margin-top: 40px;
+        font-size: 60%;
+    }
+    .idea_img {
+        margin: 60px 20px 20px 20px;
+    }
+
 }
